@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="34" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">RMST at 300 seconds by treatment</text>
+<line x1="90" y1="70" x2="90" y2="430" stroke="black"/>
+<line x1="90" y1="430" x2="870" y2="430" stroke="black"/>
+<text x="20" y="250.0" transform="rotate(-90 20 250.0)" text-anchor="middle" font-family="Arial" font-size="15">RMST (seconds; lower is better)</text>
+<g font-family="Arial"><rect x="122.8" y="106.0" width="90.5" height="324.0" fill="#2463a6"/>
+<text x="168.0" y="98.0" text-anchor="middle" font-size="14">242.90</text>
+<text x="168.0" y="456.0" text-anchor="middle" font-size="14">C1</text>
+<rect x="278.8" y="142.4" width="90.5" height="287.6" fill="#2463a6"/>
+<text x="324.0" y="134.4" text-anchor="middle" font-size="14">215.62</text>
+<text x="324.0" y="456.0" text-anchor="middle" font-size="14">C2</text>
+<rect x="434.8" y="127.8" width="90.5" height="302.2" fill="#2463a6"/>
+<text x="480.0" y="119.8" text-anchor="middle" font-size="14">226.53</text>
+<text x="480.0" y="456.0" text-anchor="middle" font-size="14">C3</text>
+<rect x="590.8" y="150.6" width="90.5" height="279.4" fill="#2463a6"/>
+<text x="636.0" y="142.6" text-anchor="middle" font-size="14">209.43</text>
+<text x="636.0" y="456.0" text-anchor="middle" font-size="14">C4</text>
+<rect x="746.8" y="124.6" width="90.5" height="305.4" fill="#2463a6"/>
+<text x="792.0" y="116.6" text-anchor="middle" font-size="14">228.94</text>
+<text x="792.0" y="456.0" text-anchor="middle" font-size="14">C5</text></g>
+</svg>

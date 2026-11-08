@@ -1,0 +1,23 @@
+FIGURE 1
+Controlled C1-C5 recovery comparison. Left: restricted mean
+time without confirmed recovery through 300 seconds and
+observed/right-censored outcomes for ten episodes per treatment.
+Lower RMST indicates faster confirmed recovery. Right: paired
+C5-minus-C2 differences across ten randomized blocks, with the
+mean and 95% confidence interval. Negative values favor C5.
+
+FIGURE 2
+Mean measured T0-T8 recovery-stage durations by treatment.
+T7-T8 is the dominant observed component. Segment means may
+have unequal denominators where events are missing or censored;
+the stacked values are descriptive and are not imputed
+per-episode totals.
+
+FIGURE 3
+Representative Block 10 C2 and C5 episodes under the frozen
+5-to-25-to-5 requests-per-second transition. Panels show
+15-second-window p95 latency, the SLO threshold, HPA current
+and desired replicas, ready processing endpoints, CPU
+utilization relative to the container request, breach and
+sustained-recovery boundaries, and the single authorized C5
+action. Formal inference uses all 50 episodes.

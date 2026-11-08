@@ -1,0 +1,2 @@
+"""Results FastAPI application."""
+

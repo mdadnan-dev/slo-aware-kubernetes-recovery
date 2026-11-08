@@ -1,0 +1,89 @@
+name: net470-v3
+
+services:
+  results:
+    build:
+      context: .
+      dockerfile: services/results/Dockerfile
+    image: net470-v3-results:q1
+    environment:
+      IMAGE_VERSION: q1
+      POD_NAME: compose-results
+      POD_UID: compose-results
+      NODE_NAME: docker-desktop
+      POD_NAMESPACE: compose
+      RESULTS_MAX_RECORDS: "10000"
+    ports:
+      - "8003:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/ready', timeout=2)"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+      start_period: 5s
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+
+  processing:
+    build:
+      context: .
+      dockerfile: services/processing/Dockerfile
+    image: net470-v3-processing:q1
+    environment:
+      IMAGE_VERSION: q1
+      POD_NAME: compose-processing
+      POD_UID: compose-processing
+      NODE_NAME: docker-desktop
+      POD_NAMESPACE: compose
+      RESULTS_URL: http://results:8000
+      DOWNSTREAM_TIMEOUT_SECONDS: "30"
+    ports:
+      - "8002:8000"
+    depends_on:
+      results:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/ready', timeout=2)"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+      start_period: 5s
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+
+  ingestion:
+    build:
+      context: .
+      dockerfile: services/ingestion/Dockerfile
+    image: net470-v3-ingestion:q1
+    environment:
+      IMAGE_VERSION: q1
+      POD_NAME: compose-ingestion
+      POD_UID: compose-ingestion
+      NODE_NAME: docker-desktop
+      POD_NAMESPACE: compose
+      PROCESSING_URL: http://processing:8000
+      DOWNSTREAM_TIMEOUT_SECONDS: "30"
+    ports:
+      - "8001:8000"
+    depends_on:
+      processing:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/ready', timeout=2)"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+      start_period: 5s
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+

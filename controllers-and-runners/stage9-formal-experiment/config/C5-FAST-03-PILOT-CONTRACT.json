@@ -1,0 +1,23 @@
+{
+  "schema": "C5-FAST-03-PILOT-CONTRACT-V1",
+  "treatment": "C2_TUNED_STATIC_HPA",
+  "cpu_target_percent": 55,
+  "hpa_min_replicas": 1,
+  "hpa_max_replicas": 5,
+  "theta_ms": 123.472,
+  "window_seconds": 15,
+  "request_retries": 0,
+  "phases": [
+    {"sequence": 1, "id": "low-precondition", "rate_rps": 5, "duration_seconds": 60},
+    {"sequence": 2, "id": "high-challenge", "rate_rps": 25, "duration_seconds": 180},
+    {"sequence": 3, "id": "low-recovery", "rate_rps": 5, "duration_seconds": 300},
+    {"sequence": 4, "id": "post-observation", "rate_rps": 5, "duration_seconds": 30}
+  ],
+  "expected_requests": 6450,
+  "telemetry_poll_seconds": 2,
+  "t7_rule": "earliest processing_received_at_utc from a completed response whose identities.processing.pod_uid is a newly created pod UID and is not earlier than that pod's T6",
+  "t8_rule": "end of first complete compliant phase-relative 15-second window after T7",
+  "tr_rule": "end of eighth consecutive complete compliant window after confirmed breach",
+  "pilot_only": true,
+  "formal_c5_authorized": false
+}

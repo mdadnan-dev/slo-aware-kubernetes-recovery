@@ -1,0 +1,40 @@
+# GATED TEMPLATE. Do not apply during G0, G1A, G1B, G2 or G3.
+# Replace every __PLACEHOLDER__ only after fresh V3-K calibration approves it.
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: processing-hpa
+  namespace: net470-v3
+  labels:
+    app.kubernetes.io/name: processing
+    app.kubernetes.io/part-of: net470-v3
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: processing
+  minReplicas: __MIN_REPLICAS__
+  maxReplicas: __MAX_REPLICAS__
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: __TARGET_CPU_UTILIZATION__
+  behavior:
+    scaleUp:
+      stabilizationWindowSeconds: __SCALE_UP_STABILIZATION_SECONDS__
+      selectPolicy: Max
+      policies:
+        - type: Pods
+          value: __SCALE_UP_PODS__
+          periodSeconds: __SCALE_UP_PERIOD_SECONDS__
+    scaleDown:
+      stabilizationWindowSeconds: __SCALE_DOWN_STABILIZATION_SECONDS__
+      selectPolicy: Max
+      policies:
+        - type: Percent
+          value: __SCALE_DOWN_PERCENT__
+          periodSeconds: __SCALE_DOWN_PERIOD_SECONDS__
+

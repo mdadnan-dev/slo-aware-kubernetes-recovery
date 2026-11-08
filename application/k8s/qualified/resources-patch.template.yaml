@@ -1,0 +1,46 @@
+# Generate this patch with scripts/06-render-qualified-resources.ps1.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ingestion
+  namespace: net470-v3
+spec:
+  template:
+    spec:
+      containers:
+        - name: ingestion
+          resources:
+            requests:
+              cpu: __INGESTION_CPU_REQUEST__
+              memory: __INGESTION_MEMORY_REQUEST__
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: processing
+  namespace: net470-v3
+spec:
+  template:
+    spec:
+      containers:
+        - name: processing
+          resources:
+            requests:
+              cpu: __PROCESSING_CPU_REQUEST__
+              memory: __PROCESSING_MEMORY_REQUEST__
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: results
+  namespace: net470-v3
+spec:
+  template:
+    spec:
+      containers:
+        - name: results
+          resources:
+            requests:
+              cpu: __RESULTS_CPU_REQUEST__
+              memory: __RESULTS_MEMORY_REQUEST__
+

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: net470-v3
+  labels:
+    app.kubernetes.io/part-of: net470-v3
+    net470.depaul.edu/evidence-class: qualification
+    pod-security.kubernetes.io/enforce: restricted
+    pod-security.kubernetes.io/audit: restricted
+    pod-security.kubernetes.io/warn: restricted
+

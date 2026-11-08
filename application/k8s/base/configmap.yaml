@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: net470-v3-config
+  namespace: net470-v3
+  labels:
+    app.kubernetes.io/part-of: net470-v3
+data:
+  PROCESSING_URL: http://processing:8000
+  RESULTS_URL: http://results:8000
+  DOWNSTREAM_TIMEOUT_SECONDS: "30"
+  RESULTS_MAX_RECORDS: "10000"
+  LOG_LEVEL: INFO
+

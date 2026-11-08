@@ -1,0 +1,2 @@
+"""Processing FastAPI application."""
+

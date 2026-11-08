@@ -1,0 +1,6 @@
+treatment,episodes,observed_recoveries,right_censored,rmst_300_seconds,mean_completed_requests,total_errors,request_error_rate_percent,controller_actions
+C1,10,7,3,242.89739,6449.4,6,0.00930233,0
+C2,10,9,1,215.618007,6449.6,4,0.00620155,0
+C3,10,8,2,226.525506,6449.9,1,0.00155039,0
+C4,10,10,0,209.426574,6448.9,11,0.01705426,10
+C5,10,9,1,228.940449,6449.5,5,0.00775194,10

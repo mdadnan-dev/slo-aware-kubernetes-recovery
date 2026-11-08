@@ -1,0 +1,19 @@
+{
+  "schema": "C5-FAST-10-R01-CONCLUSION-V1",
+  "generated_at_utc": "2026-11-06T07:32:36.347180Z",
+  "primary_contrast": "C5_MINUS_C2",
+  "estimand": "paired block difference in RMST(300)",
+  "mean_paired_difference_seconds": 13.322442,
+  "ci_95_lower_seconds": -16.651325,
+  "ci_95_upper_seconds": 43.296209,
+  "exact_sign_flip_p_value": 0.3359375,
+  "holm_adjusted_p_value": 0.71875,
+  "hypothesis_supported": false,
+  "interpretation_rule": "C5 is supported as faster than C2 only if the paired difference is negative and Holm-adjusted p <= 0.05.",
+  "formal_episodes": 50,
+  "observed_recoveries": 43,
+  "right_censored": 7,
+  "scheduled_requests": 322500,
+  "completed_requests": 322473,
+  "error_requests": 27
+}
