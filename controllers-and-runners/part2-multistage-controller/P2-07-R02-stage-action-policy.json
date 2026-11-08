@@ -1,0 +1,34 @@
+{
+  "schema": "NET470-PART2-STAGE-ACTION-POLICY-V2",
+  "slo_threshold_ms": 123.472,
+  "window_seconds": 15,
+  "stable_recovery_consecutive_windows": 8,
+  "censor_horizon_seconds": 300,
+  "rules": [
+    {
+      "dominant_stage": "T4_T5",
+      "decision": "T4_T5_BOUNDED_PREWARM_MIN_2",
+      "live_mutation": true,
+      "qualification": "VERIFIED_PASS_P2_05"
+    },
+    {
+      "dominant_stage": "T6_T7",
+      "decision": "DIAGNOSE_ENDPOINT_ACTIVATION_AND_HOLD",
+      "live_mutation": false,
+      "reason": "No qualified dominant T6-T7 excess and no safe independent routing mutation"
+    },
+    {
+      "dominant_stage": "T7_T8",
+      "decision": "HOLD_EXISTING_RECOVERY_CAPACITY",
+      "live_mutation": false,
+      "reason": "Existing HPA scale-down stabilization is 300 seconds and already covers the frozen recovery horizon"
+    },
+    {
+      "dominant_stage": "NONE",
+      "decision": "HOLD",
+      "live_mutation": false
+    }
+  ],
+  "t0_t8_policy": "Report observed source timestamps; never replace missing or structurally non-applicable events with zero",
+  "prewarm_policy": "Report pre-T0 activation separately; do not relabel pre-T0 pod lifecycle as post-T0 T3-T7"
+}

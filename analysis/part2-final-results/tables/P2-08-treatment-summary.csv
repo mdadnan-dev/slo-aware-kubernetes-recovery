@@ -1,0 +1,4 @@
+treatment,episodes,observed_recoveries,right_censored,km_rmst300_seconds,completed_requests,error_requests
+C2,3,2,1,265.811254,19350,0
+C5,3,2,1,273.432024,19350,0
+PREWARM,3,2,1,267.69804,19350,0

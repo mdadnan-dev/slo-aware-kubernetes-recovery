@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="760" viewBox="0 0 1250 760">
+<rect width="100%" height="100%" fill="white"/>
+<text x="625.0" y="42" text-anchor="middle" font-family="Times New Roman,serif" font-size="27" font-weight="bold">Observed Mean T0-T8 Recovery-Stage Durations</text>
+<line x1="145.0" y1="100" x2="145.0" y2="460" stroke="#E0E0E0"/>
+<text x="145.0" y="488" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">0</text>
+<line x1="254.4" y1="100" x2="254.4" y2="460" stroke="#E0E0E0"/>
+<text x="254.4" y="488" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">25</text>
+<line x1="363.9" y1="100" x2="363.9" y2="460" stroke="#E0E0E0"/>
+<text x="363.9" y="488" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">50</text>
+<line x1="473.3" y1="100" x2="473.3" y2="460" stroke="#E0E0E0"/>
+<text x="473.3" y="488" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">75</text>
+<line x1="582.8" y1="100" x2="582.8" y2="460" stroke="#E0E0E0"/>
+<text x="582.8" y="488" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">100</text>
+<line x1="692.2" y1="100" x2="692.2" y2="460" stroke="#E0E0E0"/>
+<text x="692.2" y="488" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">125</text>
+<line x1="801.7" y1="100" x2="801.7" y2="460" stroke="#E0E0E0"/>
+<text x="801.7" y="488" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">150</text>
+<line x1="911.1" y1="100" x2="911.1" y2="460" stroke="#E0E0E0"/>
+<text x="911.1" y="488" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">175</text>
+<line x1="1020.6" y1="100" x2="1020.6" y2="460" stroke="#E0E0E0"/>
+<text x="1020.6" y="488" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">200</text>
+<line x1="1130.0" y1="100" x2="1130.0" y2="460" stroke="#E0E0E0"/>
+<text x="1130.0" y="488" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">225</text>
+<text x="127" y="173" text-anchor="end" font-family="Arial,sans-serif" font-size="19" font-weight="bold">C2</text>
+<rect x="145.0" y="145" width="184.3" height="48" fill="#4E79A7" stroke="white" stroke-width="1.2"/>
+<text x="237.1" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="white">42.1</text>
+<rect x="329.3" y="145" width="0.0" height="48" fill="#A0CBE8" stroke="white" stroke-width="1.2"/>
+<rect x="329.3" y="145" width="0.0" height="48" fill="#F28E2B" stroke="white" stroke-width="1.2"/>
+<rect x="329.3" y="145" width="0.0" height="48" fill="#FFBE7D" stroke="white" stroke-width="1.2"/>
+<rect x="329.3" y="145" width="5.8" height="48" fill="#59A14F" stroke="white" stroke-width="1.2"/>
+<rect x="335.1" y="145" width="27.7" height="48" fill="#8CD17D" stroke="white" stroke-width="1.2"/>
+<rect x="362.8" y="145" width="3.4" height="48" fill="#B6992D" stroke="white" stroke-width="1.2"/>
+<rect x="366.2" y="145" width="753.5" height="48" fill="#E15759" stroke="white" stroke-width="1.2"/>
+<text x="743.0" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="white">172.1</text>
+<text x="1129.7" y="167" font-family="Arial,sans-serif" font-size="15" font-weight="bold">Sum 222.7 s</text>
+<text x="1129.7" y="188" font-family="Arial,sans-serif" font-size="12">Missing: none</text>
+<text x="127" y="283" text-anchor="end" font-family="Arial,sans-serif" font-size="19" font-weight="bold">C5</text>
+<rect x="145.0" y="255" width="195.0" height="48" fill="#4E79A7" stroke="white" stroke-width="1.2"/>
+<text x="242.5" y="285" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="white">44.5</text>
+<rect x="340.0" y="255" width="0.0" height="48" fill="#A0CBE8" stroke="white" stroke-width="1.2"/>
+<rect x="340.0" y="255" width="0.0" height="48" fill="#F28E2B" stroke="white" stroke-width="1.2"/>
+<rect x="340.0" y="255" width="1.5" height="48" fill="#FFBE7D" stroke="white" stroke-width="1.2"/>
+<rect x="341.5" y="255" width="4.4" height="48" fill="#59A14F" stroke="white" stroke-width="1.2"/>
+<rect x="345.8" y="255" width="27.7" height="48" fill="#8CD17D" stroke="white" stroke-width="1.2"/>
+<rect x="373.6" y="255" width="3.2" height="48" fill="#B6992D" stroke="white" stroke-width="1.2"/>
+<rect x="376.8" y="255" width="751.7" height="48" fill="#E15759" stroke="white" stroke-width="1.2"/>
+<text x="752.6" y="285" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="white">171.7</text>
+<text x="1138.5" y="277" font-family="Arial,sans-serif" font-size="15" font-weight="bold">Sum 224.7 s</text>
+<text x="1138.5" y="298" font-family="Arial,sans-serif" font-size="12">Missing: none</text>
+<text x="127" y="393" text-anchor="end" font-family="Arial,sans-serif" font-size="19" font-weight="bold">PREWARM</text>
+<rect x="145.0" y="365" width="202.1" height="48" fill="#4E79A7" stroke="white" stroke-width="1.2"/>
+<text x="246.0" y="395" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="white">46.2</text>
+<rect x="347.1" y="365" width="0.0" height="48" fill="#FFBE7D" stroke="white" stroke-width="1.2"/>
+<rect x="347.1" y="365" width="2.9" height="48" fill="#59A14F" stroke="white" stroke-width="1.2"/>
+<rect x="350.0" y="365" width="8.8" height="48" fill="#8CD17D" stroke="white" stroke-width="1.2"/>
+<rect x="358.8" y="365" width="2.0" height="48" fill="#B6992D" stroke="white" stroke-width="1.2"/>
+<rect x="360.8" y="365" width="638.7" height="48" fill="#E15759" stroke="white" stroke-width="1.2"/>
+<text x="680.1" y="395" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="white">145.9</text>
+<text x="1009.4" y="387" font-family="Arial,sans-serif" font-size="15" font-weight="bold">Sum 195.2 s</text>
+<text x="1009.4" y="408" font-family="Arial,sans-serif" font-size="12">Missing: T1-T2, T2-T3</text>
+<text x="637.5" y="518" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Sum of reported mean stage durations (seconds)</text>
+<rect x="95" y="555" width="23" height="16" fill="#4E79A7"/>
+<text x="128" y="569" font-family="Arial,sans-serif" font-size="14">T0-T1 (n C2/C5/PW=3/3/3)</text>
+<rect x="380" y="555" width="23" height="16" fill="#A0CBE8"/>
+<text x="413" y="569" font-family="Arial,sans-serif" font-size="14">T1-T2 (n C2/C5/PW=3/3/0)</text>
+<rect x="665" y="555" width="23" height="16" fill="#F28E2B"/>
+<text x="698" y="569" font-family="Arial,sans-serif" font-size="14">T2-T3 (n C2/C5/PW=3/3/0)</text>
+<rect x="950" y="555" width="23" height="16" fill="#FFBE7D"/>
+<text x="983" y="569" font-family="Arial,sans-serif" font-size="14">T3-T4 (n C2/C5/PW=3/3/3)</text>
+<rect x="95" y="603" width="23" height="16" fill="#59A14F"/>
+<text x="128" y="617" font-family="Arial,sans-serif" font-size="14">T4-T5 (n C2/C5/PW=3/3/3)</text>
+<rect x="380" y="603" width="23" height="16" fill="#8CD17D"/>
+<text x="413" y="617" font-family="Arial,sans-serif" font-size="14">T5-T6 (n C2/C5/PW=3/3/3)</text>
+<rect x="665" y="603" width="23" height="16" fill="#B6992D"/>
+<text x="698" y="617" font-family="Arial,sans-serif" font-size="14">T6-T7 (n C2/C5/PW=3/3/3)</text>
+<rect x="950" y="603" width="23" height="16" fill="#E15759"/>
+<text x="983" y="617" font-family="Arial,sans-serif" font-size="14">T7-T8 (n C2/C5/PW=3/3/3)</text>
+<text x="625.0" y="690" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Numbers inside segments are observed means in seconds. Missing and structurally non-applicable stages are not imputed.</text>
+<text x="625.0" y="718" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Stacked sums are descriptive because stage-specific means may use unequal denominators.</text>
+</svg>

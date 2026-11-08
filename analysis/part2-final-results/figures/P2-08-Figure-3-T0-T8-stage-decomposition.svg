@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="610" viewBox="0 0 1100 610"><rect width="100%" height="100%" fill="white"/>
+<text x="550" y="38" text-anchor="middle" font-family="serif" font-size="25" font-weight="bold">Observed Mean T0-T8 Stage Durations</text>
+<text x="102" y="138" text-anchor="end" font-family="sans-serif" font-size="18">C2</text>
+<rect x="120.0" y="110" width="126.3" height="42" fill="#4E79A7" stroke="white"/>
+<rect x="246.3" y="110" width="4.0" height="42" fill="#59A14F" stroke="white"/>
+<rect x="250.3" y="110" width="19.0" height="42" fill="#8CD17D" stroke="white"/>
+<rect x="269.3" y="110" width="2.3" height="42" fill="#B6992D" stroke="white"/>
+<rect x="271.6" y="110" width="516.4" height="42" fill="#E15759" stroke="white"/>
+<text x="796.0" y="137" font-family="sans-serif" font-size="14">reported segments only</text>
+<text x="102" y="243" text-anchor="end" font-family="sans-serif" font-size="18">C5</text>
+<rect x="120.0" y="215" width="133.6" height="42" fill="#4E79A7" stroke="white"/>
+<rect x="253.6" y="215" width="1.0" height="42" fill="#FFBE7D" stroke="white"/>
+<rect x="254.6" y="215" width="3.0" height="42" fill="#59A14F" stroke="white"/>
+<rect x="257.6" y="215" width="19.0" height="42" fill="#8CD17D" stroke="white"/>
+<rect x="276.6" y="215" width="2.2" height="42" fill="#B6992D" stroke="white"/>
+<rect x="278.8" y="215" width="515.1" height="42" fill="#E15759" stroke="white"/>
+<text x="802.0" y="242" font-family="sans-serif" font-size="14">reported segments only</text>
+<text x="102" y="348" text-anchor="end" font-family="sans-serif" font-size="18">PREWARM</text>
+<rect x="120.0" y="320" width="138.5" height="42" fill="#4E79A7" stroke="white"/>
+<rect x="258.5" y="320" width="2.0" height="42" fill="#59A14F" stroke="white"/>
+<rect x="260.5" y="320" width="6.0" height="42" fill="#8CD17D" stroke="white"/>
+<rect x="266.5" y="320" width="1.4" height="42" fill="#B6992D" stroke="white"/>
+<rect x="267.9" y="320" width="437.7" height="42" fill="#E15759" stroke="white"/>
+<text x="713.5" y="347" font-family="sans-serif" font-size="14">reported segments only</text>
+<rect x="80" y="465" width="20" height="14" fill="#4E79A7"/>
+<text x="109" y="478" font-family="sans-serif" font-size="15">T0-T1</text>
+<rect x="330" y="465" width="20" height="14" fill="#A0CBE8"/>
+<text x="359" y="478" font-family="sans-serif" font-size="15">T1-T2</text>
+<rect x="580" y="465" width="20" height="14" fill="#F28E2B"/>
+<text x="609" y="478" font-family="sans-serif" font-size="15">T2-T3</text>
+<rect x="830" y="465" width="20" height="14" fill="#FFBE7D"/>
+<text x="859" y="478" font-family="sans-serif" font-size="15">T3-T4</text>
+<rect x="80" y="505" width="20" height="14" fill="#59A14F"/>
+<text x="109" y="518" font-family="sans-serif" font-size="15">T4-T5</text>
+<rect x="330" y="505" width="20" height="14" fill="#8CD17D"/>
+<text x="359" y="518" font-family="sans-serif" font-size="15">T5-T6</text>
+<rect x="580" y="505" width="20" height="14" fill="#B6992D"/>
+<text x="609" y="518" font-family="sans-serif" font-size="15">T6-T7</text>
+<rect x="830" y="505" width="20" height="14" fill="#E15759"/>
+<text x="859" y="518" font-family="sans-serif" font-size="15">T7-T8</text>
+<text x="550" y="575" text-anchor="middle" font-family="sans-serif" font-size="14">Missing and structurally non-applicable stages are not imputed; stacked means may have unequal denominators.</text>
+</svg>

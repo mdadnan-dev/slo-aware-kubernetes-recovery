@@ -1,0 +1,19 @@
+{
+  "schema": "NET470-PART2-ACTION-CATALOG-V1",
+  "live_mutation_enabled": false,
+  "stable_recovery_required_consecutive_windows": 8,
+  "stable_recovery_window_seconds": 15,
+  "stable_recovery_slo_threshold_ms": 123.472,
+  "policy": "Every non-HOLD action requires separate qualification before live enablement.",
+  "actions": [
+    {"stage": "T0_T1", "action": "HOLD_METRIC_PATH_UNQUALIFIED", "mode": "DIAGNOSIS_ONLY"},
+    {"stage": "T1_T2", "action": "EVALUATE_BOUNDED_HPA_MIN_FLOOR", "mode": "QUALIFICATION_REQUIRED"},
+    {"stage": "T2_T3", "action": "HOLD_EXISTING_SCALE_DECISION", "mode": "DIAGNOSIS_ONLY"},
+    {"stage": "T3_T4", "action": "EVALUATE_BOUNDED_PREWARM", "mode": "QUALIFICATION_REQUIRED"},
+    {"stage": "T4_T5", "action": "EVALUATE_SCHEDULING_PREWARM", "mode": "QUALIFICATION_REQUIRED"},
+    {"stage": "T5_T6", "action": "EVALUATE_STARTUP_PREPARED_CAPACITY", "mode": "QUALIFICATION_REQUIRED"},
+    {"stage": "T6_T7", "action": "EVALUATE_READINESS_PATH_REMEDIATION", "mode": "QUALIFICATION_REQUIRED"},
+    {"stage": "T7_T8", "action": "EVALUATE_BOUNDED_CONCURRENCY_OR_QUEUE_CONTROL", "mode": "QUALIFICATION_REQUIRED"}
+  ]
+}
+

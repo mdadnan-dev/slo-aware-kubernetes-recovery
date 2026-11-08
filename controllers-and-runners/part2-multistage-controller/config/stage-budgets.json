@@ -1,0 +1,64 @@
+{
+  "schema": "NET470-PART2-STAGE-BUDGETS-V1",
+  "source_treatment": "C2",
+  "estimator": "max(resolution_floor, median_plus_3mad)",
+  "resolution_floor_seconds": 1.0,
+  "budgets": {
+    "T0_T1": {
+      "n": 10,
+      "median_seconds": 49.561603000000005,
+      "mad_seconds": 3.425587499999999,
+      "raw_budget_seconds_median_plus_3mad": 59.8383655,
+      "budget_seconds": 59.8383655
+    },
+    "T1_T2": {
+      "n": 10,
+      "median_seconds": 0.0,
+      "mad_seconds": 0.0,
+      "raw_budget_seconds_median_plus_3mad": 0.0,
+      "budget_seconds": 1.0
+    },
+    "T2_T3": {
+      "n": 10,
+      "median_seconds": 0.0,
+      "mad_seconds": 0.0,
+      "raw_budget_seconds_median_plus_3mad": 0.0,
+      "budget_seconds": 1.0
+    },
+    "T3_T4": {
+      "n": 10,
+      "median_seconds": 0.0,
+      "mad_seconds": 0.0,
+      "raw_budget_seconds_median_plus_3mad": 0.0,
+      "budget_seconds": 1.0
+    },
+    "T4_T5": {
+      "n": 10,
+      "median_seconds": 1.0,
+      "mad_seconds": 0.0,
+      "raw_budget_seconds_median_plus_3mad": 1.0,
+      "budget_seconds": 1.0
+    },
+    "T5_T6": {
+      "n": 10,
+      "median_seconds": 6.0,
+      "mad_seconds": 0.5,
+      "raw_budget_seconds_median_plus_3mad": 7.5,
+      "budget_seconds": 7.5
+    },
+    "T6_T7": {
+      "n": 10,
+      "median_seconds": 1.1115475,
+      "mad_seconds": 0.13418399999999991,
+      "raw_budget_seconds_median_plus_3mad": 1.5140994999999997,
+      "budget_seconds": 1.5140994999999997
+    },
+    "T7_T8": {
+      "n": 9,
+      "median_seconds": 55.918058,
+      "mad_seconds": 18.28241,
+      "raw_budget_seconds_median_plus_3mad": 110.765288,
+      "budget_seconds": 110.765288
+    }
+  }
+}

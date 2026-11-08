@@ -1,0 +1,11 @@
+{
+  "schema": "NET470-PART2-PREWARM-QUALIFICATION-V1",
+  "recorded_at_utc": "2026-11-08T11:20:10.838969Z",
+  "action": "T4_T5_BOUNDED_PREWARM_MIN_2",
+  "status": "VERIFIED_PASS",
+  "live_workload_executed": false,
+  "application_modified": false,
+  "workload_protocol_modified": false,
+  "original_spec_sha256": "F379CFAAD51885FDA3C02394AA1808E237C355095AD40EFC9739E7DE78B0F9F9",
+  "failure": ""
+}

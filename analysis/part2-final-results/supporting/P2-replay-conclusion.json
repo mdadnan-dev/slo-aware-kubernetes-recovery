@@ -1,0 +1,27 @@
+{
+  "schema": "NET470-PART2-OFFLINE-REPLAY-V1",
+  "status": "VERIFIED_PASS",
+  "analysis_type": "RETROSPECTIVE_DIAGNOSTIC_REPLAY",
+  "episodes": 50,
+  "live_cluster_queried": false,
+  "live_cluster_modified": false,
+  "performance_claim_authorized": false,
+  "input_sha256": {
+    "durations": "69880C05AA2B75CC32DA92E630DD029764799DAC76C413D58E662261086CFBDA",
+    "outcomes": "10C88819ED1E6C3B9D845318F143FAB7F4E20BD53952671676655872654BA347",
+    "budgets": "70FD59C8443980F6ACC0916F66CF71530DFF8D3866412D0E3A4E2B2221931D73"
+  },
+  "dominant_stage_counts": {
+    "T0_T1": 0,
+    "T1_T2": 0,
+    "T2_T3": 0,
+    "T3_T4": 0,
+    "T4_T5": 16,
+    "T5_T6": 0,
+    "T6_T7": 0,
+    "T7_T8": 7,
+    "NONE": 27
+  },
+  "right_censored_episodes": 7,
+  "recommended_next_step": "Select the most frequent actionable dominant stage and qualify one bounded adapter prospectively."
+}

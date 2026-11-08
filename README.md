@@ -78,3 +78,17 @@ The final figures can be regenerated using:
 ```powershell
 python analysis/figure-generation/Generate-C5-Final-Three-Figures-R03.py
 ```
+
+## Exploratory multistage follow-up
+
+A separate three-arm exploratory follow-up compared:
+
+- C2: tuned static HPA baseline
+- C5: original T1-T2 stage-aware controller
+- PREWARM: dominant-stage-selected T4-T5 bounded prewarming
+
+Three randomized complete blocks produced nine scientifically admissible episodes. KM RMST(300) was 265.811 seconds for C2, 273.432 seconds for C5, and 267.698 seconds for PREWARM. PREWARM was descriptively close to C2 and faster than C5, but the exploratory paired comparisons did not support superiority. Equivalence was not tested.
+
+The follow-up reused the frozen 5-25-5 RPS workload, applied strict right censoring at 300 seconds, retained observed T0-T8 timestamps without imputation, and restored the original HPA specification after every episode.
+
+Compact final results are under `analysis/part2-final-results/`. Controller code and offline analysis scripts are under `controllers-and-runners/part2-multistage-controller/`.

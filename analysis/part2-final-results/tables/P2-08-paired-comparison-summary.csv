@@ -1,0 +1,4 @@
+contrast,mean_paired_difference_seconds,exact_sign_flip_p_exploratory,interpretation
+C5_MINUS_C2,7.62077,0.5,Positive favors C2; superiority not supported
+PREWARM_MINUS_C2,1.886785,1.0,Positive favors C2; superiority not supported
+PREWARM_MINUS_C5,-5.733985,1.0,Negative descriptively favors PREWARM; superiority not supported

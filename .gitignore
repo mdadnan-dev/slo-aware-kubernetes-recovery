@@ -34,3 +34,9 @@ k8s/hpa/generated/
 Thumbs.db
 .vscode/
 .idea/
+
+# Part 2 local experiment evidence and transcripts
+controllers-and-runners/part2-multistage-controller/analysis/
+controllers-and-runners/part2-multistage-controller/*console.txt
+controllers-and-runners/part2-multistage-controller/**/__pycache__/
+controllers-and-runners/part2-multistage-controller/**/*.pyc

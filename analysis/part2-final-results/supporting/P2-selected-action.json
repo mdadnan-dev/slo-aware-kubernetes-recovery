@@ -1,0 +1,31 @@
+﻿{
+    "schema":  "NET470-PART2-ACTION-SELECTION-V1",
+    "selected_at_utc":  "2026-11-08T11:13:07.5818428Z",
+    "replay_results":  {
+                           "no_qualified_excess":  27,
+                           "T4_T5":  16,
+                           "T7_T8":  7
+                       },
+    "rejected_action":  {
+                            "id":  "RECOVERY_CAPACITY_HOLD",
+                            "target_stage":  "T7_T8",
+                            "reason":  "Likely redundant with the existing 300-second HPA scale-down stabilization window"
+                        },
+    "selected_action":  {
+                            "id":  "T4_T5_BOUNDED_PREWARM_MIN_2",
+                            "target_stage":  "T4_T5",
+                            "min_replicas":  2,
+                            "max_replicas":  5,
+                            "cpu_target_percent":  55,
+                            "activation":  "stable low precondition before challenge",
+                            "stop":  "restore exact original specification after stable recovery, safety horizon or any exit",
+                            "maximum_actions_per_episode":  1
+                        },
+    "rationale":  "T4-T5 was the most frequent qualified dominant-stage excess and prewarming before the challenge is temporally capable of reducing later scheduling work.",
+    "workload_protocol_modified":  false,
+    "application_code_modified":  false,
+    "live_enabled":  false,
+    "qualification_required":  true,
+    "frozen_stage9_modified":  false,
+    "frozen_stage10_modified":  false
+}

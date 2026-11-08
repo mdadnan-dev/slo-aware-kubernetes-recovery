@@ -1,0 +1,11 @@
+professor_requirement,status,evidence
+Implement adaptive recovery framework,COMPLETED,Original C5 plus dominant-stage-selected bounded PREWARM action
+Dominant-stage identification and action selection,COMPLETED,Offline replay selected T4-T5 prewarming; T7-T8 retained HOLD decision
+Stable SLO recovery definition,COMPLETED,Eight consecutive 15-second windows below 123.472 ms
+T0-T8 stage measurements,COMPLETED_WITH_MISSINGNESS_DISCLOSED,Observed timestamps retained; missing/non-applicable events not imputed
+Controlled low-high-low workload,COMPLETED,Frozen 5-25-5 RPS protocol reused
+Report recovery failures,COMPLETED,Strict right censoring at 300 seconds
+Compare adaptive controller with baseline,COMPLETED_EXPLORATORY,"Three randomized blocks of C2, C5 and PREWARM"
+Meaningful figures,COMPLETED,"RMST, paired contrasts and T0-T8 figures generated"
+Additional feasible overload level such as 20 RPS,UNRESOLVED_UNLESS_SEPARATE_EVIDENCE_EXISTS,P2-07 retained frozen 25 RPS challenge; do not claim 20 RPS without evidence
+"Paper pseudocode, equations and prior-work comparison",PAPER_INTEGRATION_REQUIRED,Must be completed in final six-page manuscript
