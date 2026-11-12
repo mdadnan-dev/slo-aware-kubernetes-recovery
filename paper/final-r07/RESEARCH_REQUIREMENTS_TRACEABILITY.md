@@ -1,8 +1,8 @@
-# Faculty Requirements Traceability
+# Research Requirements Traceability
 
 This checklist is the acceptance gate for the final submission. The frozen primary experiment is not altered by manuscript editing.
 
-| Faculty requirement | Implementation in R02 | Status |
+| Research requirement | Implementation in R02 | Status |
 |---|---|---|
 | Five increasing workload levels spanning normal through overload | 5, 10, 15, 20, and 25 requests/s; five blocks per workload-treatment cell | Complete |
 | Identical duration, configuration, and SLO across C1–C5 | Fixed 60-s precondition, 180-s challenge, 300-s recovery, 30-s observation; one-to-five replicas; 123.472-ms SLO | Complete |

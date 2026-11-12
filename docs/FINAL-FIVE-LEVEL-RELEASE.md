@@ -1,6 +1,6 @@
 # Final Five-Level Release
 
-This release responds directly to the faculty evaluation requirements.
+This release satisfies the final experimental-evaluation and reproducibility requirements.
 
 ## Included
 
@@ -8,7 +8,7 @@ This release responds directly to the faculty evaluation requirements.
 - C1-C5 comparison under identical protocol and resource constraints.
 - 125 scientifically admissible episodes, balanced across 25 design cells.
 - Strict 300-second right censoring and explicit no-breach classification.
-- Three publication figures with 95% block-bootstrap intervals.
+- Three required publication figures with 95% block-bootstrap intervals.
 - Recovery, SLO, resource, stage, controller-mechanism, paired C5-C2, outcome, and technical-exclusion tables.
 - Final stress runner and offline-only analysis code.
 - Six-page IEEE manuscript source and compiled PDF.

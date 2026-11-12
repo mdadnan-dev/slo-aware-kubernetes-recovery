@@ -1,12 +1,12 @@
 NET470 FINAL FIVE-LEVEL C1-C5 OFFLINE ANALYSIS R01
 
 The governing acceptance checklist is preserved in
-PROFESSOR-REQUIREMENTS-LOCK.txt. Analysis outputs must conform to that file.
+RESEARCH-REQUIREMENTS-LOCK.txt. Analysis outputs must conform to that file.
 
 Purpose
 -------
 This package analyzes the frozen 125-episode dataset without querying or
-modifying Kubernetes. It produces the three figures requested by the faculty,
+modifying Kubernetes. It produces the three required comparative figures,
 summary tables, paired C5-C2 comparisons, technical-exclusion records, and a
 SHA-256 manifest.
 

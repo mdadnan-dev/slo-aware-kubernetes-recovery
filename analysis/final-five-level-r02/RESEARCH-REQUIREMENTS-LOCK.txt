@@ -2,7 +2,7 @@ NET470 FINAL REPORT REQUIREMENTS LOCK
 =====================================
 
 Status: LOCKED
-Source: Professor's manuscript feedback supplied by the student
+Source: Final manuscript experimental-evaluation requirements
 Purpose: Acceptance checklist for analysis, figures, manuscript, and repository
 
 EXPERIMENTAL DESIGN

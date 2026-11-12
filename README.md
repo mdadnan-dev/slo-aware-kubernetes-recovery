@@ -33,7 +33,7 @@ The mechanism analysis explains this negative result: C5's bounded action mainly
 - Final runner: `controllers-and-runners/final-five-level-stress-runner-r01/`
 - Manuscript source: `paper/final-r07/`
 
-## Faculty-required figures
+## Required research figures
 
 1. Recovery time versus incoming requests: conditional KM RMST(300), block-bootstrap 95% confidence intervals, and explicit recovered/censored/no-breach counts.
 2. SLO-violation duration versus incoming requests: C1-C5 means with block-bootstrap 95% confidence intervals.

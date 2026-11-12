@@ -1,6 +1,6 @@
 # NET470 Final Five-Level C1-C5 Stress Runner
 
-This package executes the faculty-requested comparison at 5, 10, 15, 20 and 25 requests/s. It runs one randomized C1-C5 block per invocation by default and resumes from the earliest incomplete block.
+This package executes the research-required comparison at 5, 10, 15, 20 and 25 requests/s. It runs one randomized C1-C5 block per invocation by default and resumes from the earliest incomplete block.
 
 ## Scope
 

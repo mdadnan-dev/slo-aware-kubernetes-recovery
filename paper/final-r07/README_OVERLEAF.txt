@@ -21,7 +21,7 @@ visibly contain all three figures and must not contain "Figure ??" or blank
 trailing pages.
 
 R04 uses 0.75-inch academic margins to improve readability and target the
-faculty-required 6-7 page range without adding filler or changing results.
+required 6-7 page range without adding filler or changing results.
 
 R05 restores two evidence-bearing tables from the earlier paper structure,
 using only the frozen 125-episode data. Stale 50-episode and PREWARM tables
@@ -29,7 +29,7 @@ are intentionally excluded.
 
 R06 also restores the operational T0-T8 boundary table and the C5 production
 decision/restoration table. These definitions remain valid and add substantive
-method detail needed for the faculty-required 6-7 page manuscript.
+method detail needed for the required 6-7 page manuscript.
 
 R07 introduces a deliberate page boundary before the conclusion so the
 conclusion, reproducibility statement, and references remain readable on a
