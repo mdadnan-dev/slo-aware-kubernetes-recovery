@@ -1,0 +1,6 @@
+challenge_rps,c2_conditional_rmst300_seconds,c5_conditional_rmst300_seconds,c5_minus_c2_rmst300_seconds,c5_minus_c2_rmst300_percent,c5_minus_c2_slo_violation_seconds,c5_minus_c2_replica_seconds,c5_minus_c2_mean_cpu_percent_points,c5_minus_c2_T7_T8_seconds,c2_recovered,c2_censored,c2_no_breach,c5_recovered,c5_censored,c5_no_breach
+5,,,,,-3.000000,0.318596,-0.254805,,0,0,5,0,0,5
+10,,,,,3.000000,397.503650,-5.954764,-1.639443,0,0,5,0,0,5
+15,,183.074050,,,21.000000,277.707127,-6.291554,7.461118,0,0,5,2,0,3
+20,203.666432,253.595172,49.928740,24.514958,42.000000,241.573622,0.536438,20.771958,5,0,0,5,0,0
+25,289.023717,300.000000,10.976283,3.797710,24.000000,26.629669,5.914622,1.808809,3,2,0,0,5,0

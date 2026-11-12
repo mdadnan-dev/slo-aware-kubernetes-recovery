@@ -1,94 +1,68 @@
-﻿# SLO-Aware Recovery-Stage-Adaptive Control for Kubernetes Microservices
+# SLO-Aware Recovery-Stage-Adaptive Control for Kubernetes Microservices
 
-This repository contains the implementation and reproducibility artifacts for
-the NET 470 project:
+This repository contains the implementation and reproducibility artifacts for the NET 470 study **SLO-Aware Recovery-Stage-Adaptive Control for Kubernetes Microservices under Dynamic Workloads**.
 
-**SLO-Aware Recovery-Stage-Adaptive Control for Kubernetes Microservices under Dynamic Workloads**
+## Final five-level evaluation
 
-## Research objective
+The frozen primary experiment compares five treatments under identical workload duration, Kubernetes configuration, resource limits, and SLO definition.
 
-The project measures the complete Kubernetes recovery path from SLO detection
-through HPA response, scheduling, container startup, readiness, traffic
-activation, and sustained application-level SLO recovery.
+| Treatment | Role |
+|---|---|
+| C1 | Reference HPA |
+| C2 | Tuned static HPA and primary baseline |
+| C3 | Recovery-stage diagnosis without HPA modification |
+| C4 | Guarded adaptive HPA-floor controller |
+| C5 | Proposed recovery-stage-aware controller |
 
-## Evaluated conditions
+The design contains 125 scientifically admissible live episodes: five workload levels (5, 10, 15, 20, and 25 requests/s), five treatments, and five randomized blocks per workload-treatment cell. Across all episodes, 581,250 requests were scheduled, 581,240 completed, and 10 produced errors.
 
-- C1: Reference HPA
-- C2: Tuned static HPA and primary baseline
-- C3: Recovery-stage diagnosis without intervention
-- C4: Guarded adaptive HPA-floor intervention
-- C5: Complete recovery-stage-aware framework
+## Main finding
 
-C1-C4 are controlled baselines and ablations. C5 is the complete proposed
-framework. The preplanned primary contrast is C5 minus C2.
+The final evaluation does **not** establish faster recovery for C5 relative to tuned HPA C2. At 20 requests/s, C5 averaged approximately 49.9 seconds longer recovery, 42 seconds more SLO-violation time, and 241.6 additional replica-seconds than C2 across the five paired blocks. At 25 requests/s, all five C5 episodes were right-censored at 300 seconds.
 
-## Formal experiment
+The mechanism analysis explains this negative result: C5's bounded action mainly targeted the earlier HPA-response stage, while the dominant measured delay was downstream T7-T8 application stabilization. At overload, the shared five-replica ceiling also limited what any HPA-floor intervention could accomplish. These are reported limitations, not hidden or smoothed outcomes.
 
-- Treatments: 5
-- Randomized blocks: 10
-- Formal episodes: 50
-- Episodes per treatment: 10
-- Scheduled requests: 322,500
-- Completed requests: 322,473
-- Request errors: 27
-- Observed recoveries: 43
-- Right-censored episodes: 7
-- Censoring horizon: 300 seconds
+## Final evidence
 
-## Primary result
+- Primary dataset: `data/final-five-level/NET470-five-level-C1-C5-primary-dataset.csv`
+- Dataset SHA-256: `B7939B0FFE443AD76AC5ECE693CDFC03015C735895D27835E2DE2AF1A87781BD`
+- Accepted episodes: 125
+- Outcomes: 72 no qualifying breach, 32 recovered within 300 seconds, 21 right-censored at 300 seconds
+- Technical exclusions: four preserved failed attempts, separate from the selected dataset
+- Final analysis: `analysis/final-five-level-r02/`
+- Final runner: `controllers-and-runners/final-five-level-stress-runner-r01/`
+- Manuscript source: `paper/final-r07/`
 
-The paired C5-minus-C2 RMST(300) difference was +13.322 seconds with a 95%
-confidence interval from -16.651 to +43.296 seconds. The exact sign-flip
-p-value was 0.3359 and the Holm-adjusted p-value was 0.7188.
+## Faculty-required figures
 
-The experiment therefore did not support the hypothesis that C5 provides
-faster recovery than C2. Equivalence was not tested.
+1. Recovery time versus incoming requests: conditional KM RMST(300), block-bootstrap 95% confidence intervals, and explicit recovered/censored/no-breach counts.
+2. SLO-violation duration versus incoming requests: C1-C5 means with block-bootstrap 95% confidence intervals.
+3. Replica-seconds versus incoming requests: C1-C5 resource cost with block-bootstrap 95% confidence intervals.
+
+The plots use observed episode data without artificial smoothing. `NO_QUALIFYING_BREACH` is not encoded as zero-second recovery, and unrecovered breaches are retained as right-censored observations at 300 seconds.
 
 ## Repository structure
 
-- `application/` - microservice application, tests and Kubernetes manifests
-- `controllers-and-runners/` - final calibration, qualification, binding,
-  formal-experiment and analysis packages
-- `analysis/final-stage10-results/` - normalized final analysis tables
-- `analysis/figure-generation/` - code used to create the final figures
-- `figures/` - three final publication figures
-- `docs/` - comparison, evidence and reproducibility records
+- `application/` — microservice application, tests, and Kubernetes manifests
+- `controllers-and-runners/` — controller implementations and experiment runners
+- `data/final-five-level/` — frozen 125-row primary dataset and checksum
+- `analysis/final-five-level-r02/` — offline analysis code, tables, figures, freezes, and proof manifest
+- `paper/final-r07/` — final IEEE/Overleaf source, figures, traceability checklist, and compiled PDF
+- `analysis/final-stage10-results/` — earlier formal experiment retained for provenance
+- `analysis/part2-final-results/` — exploratory multistage follow-up retained for provenance
 
-## Important interpretation
+## Reproduce the final analysis
 
-The evaluated C5 controller was bounded, measurable and safely restored the
-original HPA configuration after every selected episode. It did not
-demonstrate statistically supported recovery-time superiority over C2. The
-measured stage decomposition indicates that T7-T8 application stabilization
-was the dominant observed delay, while the implemented C5 action primarily
-targeted an earlier HPA-response stage.
-
-## Data policy
-
-Large raw request-level evidence, virtual environments, failed attempts,
-credentials, Minikube state and machine-specific files are intentionally not
-stored in this repository. The normalized formal dataset and final analysis
-tables required to verify the reported conclusions are included.
-
-## Reproduction
-
-See the package README files and scripts under `controllers-and-runners/`.
-The final figures can be regenerated using:
+The analysis is offline-only and performs no Kubernetes queries or live workload requests.
 
 ```powershell
-python analysis/figure-generation/Generate-C5-Final-Three-Figures-R03.py
+powershell.exe -NoProfile -ExecutionPolicy Bypass `
+  -File .\analysis\final-five-level-r02\Run-NET470-Final-Analysis.ps1 `
+  -Python python `
+  -PrimaryDataset .\data\final-five-level\NET470-five-level-C1-C5-primary-dataset.csv `
+  -EvidenceRoot .\data\final-five-level `
+  -OutputRoot .\analysis-output `
+  -ExpectedDatasetSHA256 B7939B0FFE443AD76AC5ECE693CDFC03015C735895D27835E2DE2AF1A87781BD
 ```
 
-## Exploratory multistage follow-up
-
-A separate three-arm exploratory follow-up compared:
-
-- C2: tuned static HPA baseline
-- C5: original T1-T2 stage-aware controller
-- PREWARM: dominant-stage-selected T4-T5 bounded prewarming
-
-Three randomized complete blocks produced nine scientifically admissible episodes. KM RMST(300) was 265.811 seconds for C2, 273.432 seconds for C5, and 267.698 seconds for PREWARM. PREWARM was descriptively close to C2 and faster than C5, but the exploratory paired comparisons did not support superiority. Equivalence was not tested.
-
-The follow-up reused the frozen 5-25-5 RPS workload, applied strict right censoring at 300 seconds, retained observed T0-T8 timestamps without imputation, and restored the original HPA specification after every episode.
-
-Compact final results are under `analysis/part2-final-results/`. Controller code and offline analysis scripts are under `controllers-and-runners/part2-multistage-controller/`.
+The final experiment is frozen. Any future C5-R refinement must be identified as a separate follow-up experiment and must not overwrite or be merged into this dataset.
