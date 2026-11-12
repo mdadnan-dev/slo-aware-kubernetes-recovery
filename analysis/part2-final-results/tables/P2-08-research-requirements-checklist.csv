@@ -1,4 +1,4 @@
-professor_requirement,status,evidence
+research_requirement,status,evidence
 Implement adaptive recovery framework,COMPLETED,Original C5 plus dominant-stage-selected bounded PREWARM action
 Dominant-stage identification and action selection,COMPLETED,Offline replay selected T4-T5 prewarming; T7-T8 retained HOLD decision
 Stable SLO recovery definition,COMPLETED,Eight consecutive 15-second windows below 123.472 ms

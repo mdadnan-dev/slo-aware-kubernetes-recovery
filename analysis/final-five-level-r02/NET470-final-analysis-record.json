@@ -1,0 +1,33 @@
+{
+  "schema": "NET470-FINAL-FIVE-LEVEL-ANALYSIS-V1",
+  "recorded_at_utc": "2026-11-11T22:20:15.597090Z",
+  "status": "VERIFIED_PASS",
+  "offline_only": true,
+  "primary_dataset": "C:\\NET470-C5-Fast\\Stress-Evaluation-R01\\final-c1-c5\\NET470-five-level-C1-C5-primary-dataset.csv",
+  "primary_dataset_sha256": "B7939B0FFE443AD76AC5ECE693CDFC03015C735895D27835E2DE2AF1A87781BD",
+  "episodes": 125,
+  "workloads": [
+    5,
+    10,
+    15,
+    20,
+    25
+  ],
+  "treatments": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5"
+  ],
+  "scheduled_requests": 581250,
+  "completed_requests": 581240,
+  "request_errors": 10,
+  "no_breach_episodes": 72,
+  "recovered_episodes": 32,
+  "right_censored_episodes": 21,
+  "technical_exclusions_preserved": 4,
+  "kubernetes_queried": false,
+  "cluster_modified": false,
+  "live_workload_executed": false
+}

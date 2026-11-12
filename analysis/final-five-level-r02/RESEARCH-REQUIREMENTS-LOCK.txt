@@ -1,0 +1,65 @@
+NET470 FINAL REPORT REQUIREMENTS LOCK
+=====================================
+
+Status: LOCKED
+Source: Final manuscript experimental-evaluation requirements
+Purpose: Acceptance checklist for analysis, figures, manuscript, and repository
+
+EXPERIMENTAL DESIGN
+- Use approximately five increasing workload levels covering normal operation,
+  moderate load, near saturation, and overload.
+- Compare C1, C2, C3, C4, and C5 under identical workload duration, system
+  configuration, resource constraints, and SLO definition.
+- C1 and C2 are static HPA baselines; C3 is diagnosis without HPA modification;
+  C4 is guarded adaptation; C5 is the proposed recovery-stage-aware controller.
+- A published external baseline is optional.
+
+REQUIRED FIGURES
+1. Recovery Time vs. Number of Incoming Requests
+   - Compare C1-C5.
+   - Include 95% confidence intervals or appropriate variability measures.
+   - Distinguish recovered episodes from right-censored outcomes.
+   - Assess C5 relative to existing HPA configurations, especially near saturation.
+2. SLO Violations vs. Number of Incoming Requests
+   - Use violation duration in seconds or violating-window percentage.
+   - Compare C1-C5 and assess stability as load increases.
+3. Resource Consumption vs. Number of Incoming Requests
+   - Use CPU utilization or replica-seconds.
+   - Compare C1-C5 and quantify the cost of adaptive recovery.
+4. Throughput/Request Success is optional and should be included only if it adds
+   evidence beyond the first three figures.
+
+LIMITATION AND MECHANISM ANALYSIS
+- Do not claim that C5 is faster than tuned HPA C2 unless observations support it.
+- Examine intervention timing, desired and ready replicas, CPU utilization, and
+  recovery-stage durations.
+- Determine whether targeting T1-T2 is effective when T7-T8 application
+  stabilization is the dominant measured stage.
+- Refine and repeat only if technically justified; any refined controller must be
+  reported as a separate follow-up evaluation and must not replace the frozen
+  primary C1-C5 dataset.
+
+PRESENTATION AND STATISTICS
+- Use Times New Roman where available, consistent C1-C5 colors and line styles,
+  labeled axes with units, readable legends, and subtle gridlines.
+- Show observed saturation effects, fluctuations, and nonlinear behavior.
+- Do not generate, fabricate, or smooth trends.
+- Discuss numerical comparisons, technical implications, unsuccessful recoveries,
+  no-breach episodes, and censored episodes.
+
+FINAL MANUSCRIPT AND REPOSITORY
+- Update Overleaf with the new figures, corresponding tables, and revised results.
+- Keep figures, tables, Abstract, Performance Evaluation, and Conclusions numerically
+  consistent.
+- Keep the complete report within 6-7 pages including references.
+- Update GitHub with the latest implementation, frozen datasets, analysis scripts,
+  and figure-generation scripts.
+
+CURRENT LOCKED PRIMARY DESIGN
+- Workloads: 5, 10, 15, 20, and 25 requests/second.
+- Treatments: C1, C2, C3, C4, and C5.
+- Replication: five randomized blocks per workload-treatment cell.
+- Primary observations: 125 scientifically admissible episodes.
+- Recovery horizon: 300 seconds with explicit right censoring.
+- Primary dataset is immutable during offline analysis.
+
