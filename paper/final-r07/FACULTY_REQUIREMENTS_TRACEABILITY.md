@@ -18,7 +18,7 @@ This checklist is the acceptance gate for the final submission. The frozen prima
 | Honest measurable claims and limitations | Manuscript states that C5 did not outperform C2 and quantifies recovery, SLO, and resource penalties | Complete |
 | Numerical consistency | Abstract, results, discussion, conclusion, tables, and figures use the frozen 125-row dataset and its SHA-256 | Complete |
 | Six to seven pages including references | Source is compact two-column format; final page count must be confirmed in Overleaf compilation | Overleaf check |
-| GitHub implementation, dataset, and scripts | Reproducibility section specifies required release contents; repository upload remains a separate release action | Pending upload |
+| GitHub implementation, dataset, and scripts | Final runner, frozen 125-row dataset, R02 offline analysis, tables, figures, manuscript source, and checksums are included in the final release branch | Complete |
 
 ## Frozen evidence
 
