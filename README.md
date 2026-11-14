@@ -50,6 +50,8 @@ These directions are exploratory. Every block-paired 95% confidence interval inc
 - Technical exclusions: four preserved failed attempts, separate from the selected primary dataset
 - Primary analysis: `analysis/final-five-level-r02/`
 - Primary runner: `controllers-and-runners/final-five-level-stress-runner-r01/`
+- C5-R2 runner and controller: `controllers-and-runners/c5r2-replicated-r01/`
+- C5-R2 selected dataset and freeze records: `data/c5r2-exploratory-r01/`
 - C5-R2 analysis: `analysis/c5r2-exploratory-r01/`
 - C5-R2 selected dataset SHA-256: `A3D98519712E91AB5507E2AF1FF74E78282E97E2DC8E64BD115F8E67F09FA4C1`
 - C5-R2 verified analysis archive SHA-256: `BB9A12D7D6B5CE8C07A657D4D9B3DB27405F3E79F5C9017E0F61DB4BEB397581`
@@ -67,7 +69,9 @@ The plots use observed episode data without artificial smoothing. `NO_QUALIFYING
 
 - `application/` — microservice application, tests, and Kubernetes manifests
 - `controllers-and-runners/` — controller implementations and experiment runners
+- `controllers-and-runners/c5r2-replicated-r01/` — verified C5-R2 controller, replicated runner, schedule, freeze, and checksums
 - `data/final-five-level/` — frozen 125-row primary dataset and checksum
+- `data/c5r2-exploratory-r01/` — separate frozen 15-row C2/C5/C5-R2 dataset, state, freeze, summaries, and manifest
 - `analysis/final-five-level-r02/` — primary offline analysis code, tables, figures, freezes, and proof manifest
 - `analysis/c5r2-exploratory-r01/` — separate 15-episode C5-R2 follow-up summaries and exploratory figure
 - `paper/final-r07/` — final IEEE/Overleaf source, figures, traceability checklist, and compiled PDF
