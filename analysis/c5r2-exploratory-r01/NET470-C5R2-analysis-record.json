@@ -1,0 +1,9 @@
+{
+  "schema": "NET470-C5R2-FINAL-ANALYSIS-R01",
+  "status": "VERIFIED_PASS",
+  "offline_only": true,
+  "episodes": 15,
+  "dataset_sha256": "A3D98519712E91AB5507E2AF1FF74E78282E97E2DC8E64BD115F8E67F09FA4C1",
+  "counterfactual_claim_allowed": false,
+  "statistical_superiority_established": false
+}
