@@ -1,0 +1,16 @@
+{
+  "schema": "NET470-C5R2-20RPS-REPLICATED-EVALUATION-R01",
+  "updated_at_utc": "2026-11-14T02:31:04.841444Z",
+  "status": "VERIFIED_PASS",
+  "accepted_episodes": 15,
+  "planned_episodes": 15,
+  "completed_blocks": 5,
+  "remaining_episodes": 0,
+  "treatments": [
+    "C2",
+    "C5",
+    "C5-R2"
+  ],
+  "remaining_design_cells": [],
+  "live_workload_executed": true
+}
