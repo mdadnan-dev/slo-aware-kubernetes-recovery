@@ -1,0 +1,3 @@
+C5-R2 EXPLORATORY INTERPRETATION
+
+At 20 RPS, qualifying breaches occurred in 2/5 C2 episodes, 5/5 C5 episodes, and 2/5 C5-R2 episodes. Mean SLO-violation duration was 36 s for C2, 63 s for C5, and 39 s for C5-R2. Mean replica consumption was 1846.192, 1971.522, and 1735.988 replica-seconds, respectively. C5-R2 showed favorable numerical directions relative to C5, but every paired 95% confidence interval included zero. One C5-R2 breach was right-censored at 300 s. Therefore, this exploratory extension does not establish statistical superiority over C5 or C2.
