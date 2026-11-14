@@ -1,0 +1,11 @@
+{
+  "schema": "NET470-C5R2-20RPS-REPLICATED-EVALUATION-R01",
+  "status": "VERIFIED_PASS",
+  "episodes": 15,
+  "blocks": 5,
+  "dataset": "C:\\NET470-C5-Fast\\Stress-Evaluation-R01\\C5-R-Evaluation-R01\\replicated-20rps-c5r2-r01\\NET470-C5R2-20RPS-replicated-dataset.csv",
+  "dataset_sha256": "A3D98519712E91AB5507E2AF1FF74E78282E97E2DC8E64BD115F8E67F09FA4C1",
+  "schedule_sha256": "81BF22C5790086088FB5A3BA4A694E7DAA59FAFD3ABE49A7D517AC9EEAFC3FCF",
+  "c5r2_controller_sha256": "EC780EA6F493EF2EA411238EA0BA8B69CFC3FA7B68E116C1CDBEF42EA7919737",
+  "primary_125_episode_dataset_modified": false
+}

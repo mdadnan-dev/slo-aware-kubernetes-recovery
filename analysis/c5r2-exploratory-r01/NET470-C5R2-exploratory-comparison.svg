@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="520" viewBox="0 0 1500 520">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:"Times New Roman",serif;fill:#222}.title{font-size:22px;font-weight:bold}.axis{font-size:17px}.note{font-size:15px}.grid{stroke:#dddddd;stroke-width:1}.bar{stroke:#333;stroke-width:1}</style>
+<text class="title" x="280" y="35" text-anchor="middle">Qualifying breach incidence</text>
+<text class="axis" transform="translate(53,240.0) rotate(-90)" text-anchor="middle">% of episodes</text>
+<line class="grid" x1="110" y1="405.0" x2="475" y2="405.0"/>
+<text class="note" x="102" y="410.0" text-anchor="end">0</text>
+<line class="grid" x1="110" y1="339.0" x2="475" y2="339.0"/>
+<text class="note" x="102" y="344.0" text-anchor="end">22</text>
+<line class="grid" x1="110" y1="273.0" x2="475" y2="273.0"/>
+<text class="note" x="102" y="278.0" text-anchor="end">44</text>
+<line class="grid" x1="110" y1="207.0" x2="475" y2="207.0"/>
+<text class="note" x="102" y="212.0" text-anchor="end">66</text>
+<line class="grid" x1="110" y1="141.0" x2="475" y2="141.0"/>
+<text class="note" x="102" y="146.0" text-anchor="end">88</text>
+<line class="grid" x1="110" y1="75.0" x2="475" y2="75.0"/>
+<text class="note" x="102" y="80.0" text-anchor="end">110</text>
+<rect class="bar" x="150" y="285.0" width="60" height="120.0" fill="#1f77b4"/>
+<text class="axis" x="180" y="430" text-anchor="middle">C2</text>
+<text class="note" x="180" y="277.0" text-anchor="middle">40.0</text>
+<rect class="bar" x="260" y="105.0" width="60" height="300.0" fill="#d62728"/>
+<text class="axis" x="290" y="430" text-anchor="middle">C5</text>
+<text class="note" x="290" y="97.0" text-anchor="middle">100.0</text>
+<rect class="bar" x="370" y="285.0" width="60" height="120.0" fill="#2ca02c"/>
+<text class="axis" x="400" y="430" text-anchor="middle">C5-R2</text>
+<text class="note" x="400" y="277.0" text-anchor="middle">40.0</text>
+<text class="title" x="775" y="35" text-anchor="middle">Mean SLO-violation duration</text>
+<text class="axis" transform="translate(548,240.0) rotate(-90)" text-anchor="middle">Seconds</text>
+<line class="grid" x1="605" y1="405.0" x2="970" y2="405.0"/>
+<text class="note" x="597" y="410.0" text-anchor="end">0</text>
+<line class="grid" x1="605" y1="339.0" x2="970" y2="339.0"/>
+<text class="note" x="597" y="344.0" text-anchor="end">17</text>
+<line class="grid" x1="605" y1="273.0" x2="970" y2="273.0"/>
+<text class="note" x="597" y="278.0" text-anchor="end">34</text>
+<line class="grid" x1="605" y1="207.0" x2="970" y2="207.0"/>
+<text class="note" x="597" y="212.0" text-anchor="end">51</text>
+<line class="grid" x1="605" y1="141.0" x2="970" y2="141.0"/>
+<text class="note" x="597" y="146.0" text-anchor="end">68</text>
+<line class="grid" x1="605" y1="75.0" x2="970" y2="75.0"/>
+<text class="note" x="597" y="80.0" text-anchor="end">85</text>
+<rect class="bar" x="645" y="265.31746031746036" width="60" height="139.68253968253967" fill="#1f77b4"/>
+<text class="axis" x="675" y="430" text-anchor="middle">C2</text>
+<text class="note" x="675" y="257.31746031746036" text-anchor="middle">36.0</text>
+<line x1="675" y1="386.2418726952927" x2="675" y2="144.393047939628" stroke="#111" stroke-width="2"/>
+<line x1="666" y1="386.2418726952927" x2="684" y2="386.2418726952927" stroke="#111" stroke-width="2"/>
+<line x1="666" y1="144.393047939628" x2="684" y2="144.393047939628" stroke="#111" stroke-width="2"/>
+<rect class="bar" x="755" y="160.5555555555556" width="60" height="244.4444444444444" fill="#d62728"/>
+<text class="axis" x="785" y="430" text-anchor="middle">C5</text>
+<text class="note" x="785" y="152.5555555555556" text-anchor="middle">63.0</text>
+<line x1="785" y1="289.82919007407406" x2="785" y2="31.28192103703708" stroke="#111" stroke-width="2"/>
+<line x1="776" y1="289.82919007407406" x2="794" y2="289.82919007407406" stroke="#111" stroke-width="2"/>
+<line x1="776" y1="31.28192103703708" x2="794" y2="31.28192103703708" stroke="#111" stroke-width="2"/>
+<rect class="bar" x="865" y="253.6772486772487" width="60" height="151.3227513227513" fill="#2ca02c"/>
+<text class="axis" x="895" y="430" text-anchor="middle">C5-R2</text>
+<text class="note" x="895" y="245.6772486772487" text-anchor="middle">39.0</text>
+<line x1="895" y1="405.0" x2="895" y2="58.42484004463347" stroke="#111" stroke-width="2"/>
+<line x1="886" y1="405.0" x2="904" y2="405.0" stroke="#111" stroke-width="2"/>
+<line x1="886" y1="58.42484004463347" x2="904" y2="58.42484004463347" stroke="#111" stroke-width="2"/>
+<text class="title" x="1270" y="35" text-anchor="middle">Mean resource consumption</text>
+<text class="axis" transform="translate(1043,240.0) rotate(-90)" text-anchor="middle">Replica-seconds</text>
+<line class="grid" x1="1100" y1="405.0" x2="1465" y2="405.0"/>
+<text class="note" x="1092" y="410.0" text-anchor="end">0</text>
+<line class="grid" x1="1100" y1="339.0" x2="1465" y2="339.0"/>
+<text class="note" x="1092" y="344.0" text-anchor="end">532</text>
+<line class="grid" x1="1100" y1="273.0" x2="1465" y2="273.0"/>
+<text class="note" x="1092" y="278.0" text-anchor="end">1065</text>
+<line class="grid" x1="1100" y1="207.0" x2="1465" y2="207.0"/>
+<text class="note" x="1092" y="212.0" text-anchor="end">1597</text>
+<line class="grid" x1="1100" y1="141.0" x2="1465" y2="141.0"/>
+<text class="note" x="1092" y="146.0" text-anchor="end">2129</text>
+<line class="grid" x1="1100" y1="75.0" x2="1465" y2="75.0"/>
+<text class="note" x="1092" y="80.0" text-anchor="end">2662</text>
+<rect class="bar" x="1140" y="176.0948796372133" width="60" height="228.9051203627867" fill="#1f77b4"/>
+<text class="axis" x="1170" y="430" text-anchor="middle">C2</text>
+<text class="note" x="1170" y="168.0948796372133" text-anchor="middle">1846.2</text>
+<line x1="1170" y1="214.68930892314634" x2="1170" y2="137.50045035128016" stroke="#111" stroke-width="2"/>
+<line x1="1161" y1="214.68930892314634" x2="1179" y2="214.68930892314634" stroke="#111" stroke-width="2"/>
+<line x1="1161" y1="137.50045035128016" x2="1179" y2="137.50045035128016" stroke="#111" stroke-width="2"/>
+<rect class="bar" x="1250" y="160.55555555555557" width="60" height="244.44444444444443" fill="#d62728"/>
+<text class="axis" x="1280" y="430" text-anchor="middle">C5</text>
+<text class="note" x="1280" y="152.55555555555557" text-anchor="middle">1971.5</text>
+<line x1="1280" y1="162.4175012273783" x2="1280" y2="158.6936098837328" stroke="#111" stroke-width="2"/>
+<line x1="1271" y1="162.4175012273783" x2="1289" y2="162.4175012273783" stroke="#111" stroke-width="2"/>
+<line x1="1271" y1="158.6936098837328" x2="1289" y2="158.6936098837328" stroke="#111" stroke-width="2"/>
+<rect class="bar" x="1360" y="189.75886464624293" width="60" height="215.24113535375707" fill="#2ca02c"/>
+<text class="axis" x="1390" y="430" text-anchor="middle">C5-R2</text>
+<text class="note" x="1390" y="181.75886464624293" text-anchor="middle">1736.0</text>
+<line x1="1390" y1="228.24293086561326" x2="1390" y2="151.2747984268726" stroke="#111" stroke-width="2"/>
+<line x1="1381" y1="228.24293086561326" x2="1399" y2="228.24293086561326" stroke="#111" stroke-width="2"/>
+<line x1="1381" y1="151.2747984268726" x2="1399" y2="151.2747984268726" stroke="#111" stroke-width="2"/>
+<text class="note" x="750" y="495" text-anchor="middle">Bars show means; error bars show 95% Student-t confidence intervals (n=5). Visual lower bounds are truncated at zero.</text>
+</svg>

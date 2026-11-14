@@ -1,0 +1,13 @@
+comparison,metric,n,mean_difference,ci95_lower,ci95_upper,ci_excludes_zero
+C5-R2 minus C2,slo_violation_duration_seconds,5,3.0,-35.16981,41.16981,False
+C5-R2 minus C2,replica_seconds,5,-110.204364,-624.041005,403.632277,False
+C5-R2 minus C2,T7_T8_seconds,5,-3.398802,-28.135089,21.337484,False
+C5-R2 minus C2,slo_violating_window_percent,5,0.588235,-6.896041,8.072512,False
+C5-R2 minus C2,mean_cpu_percent,5,-1.330704,-7.257775,4.596367,False
+C5-R2 minus C2,peak_cpu_percent,5,-16.2,-51.618996,19.218996,False
+C5-R2 minus C5,slo_violation_duration_seconds,5,-24.0,-99.195032,51.195032,False
+C5-R2 minus C5,replica_seconds,5,-235.533931,-532.317766,61.249904,False
+C5-R2 minus C5,T7_T8_seconds,5,-19.703093,-50.133073,10.726886,False
+C5-R2 minus C5,slo_violating_window_percent,5,-4.705882,-19.450006,10.038242,False
+C5-R2 minus C5,mean_cpu_percent,5,0.067475,-6.313075,6.448026,False
+C5-R2 minus C5,peak_cpu_percent,5,-25.6,-62.166952,10.966952,False

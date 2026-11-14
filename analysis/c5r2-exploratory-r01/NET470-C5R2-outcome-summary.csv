@@ -1,0 +1,4 @@
+treatment,episodes,breaches,breach_percent,recovered,censored,no_breach
+C2,5,2,40.0,2,0,3
+C5,5,5,100.0,5,0,0
+C5-R2,5,2,40.0,1,1,3
