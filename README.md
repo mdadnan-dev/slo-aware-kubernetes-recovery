@@ -22,15 +22,37 @@ The final evaluation does **not** establish faster recovery for C5 relative to t
 
 The mechanism analysis explains this negative result: C5's bounded action mainly targeted the earlier HPA-response stage, while the dominant measured delay was downstream T7-T8 application stabilization. At overload, the shared five-replica ceiling also limited what any HPA-floor intervention could accomplish. These are reported limitations, not hidden or smoothed outcomes.
 
+## Exploratory C5-R2 follow-up
+
+A separate balanced experiment at 20 requests/s compared C2, C5, and the refined C5-R2 controller over five randomized blocks (15 scientifically admissible episodes). The primary 125-episode C1-C5 dataset was not modified.
+
+C5-R2 uses the calibrated T7-T8 stage budget, suppresses intervention when no qualifying breach exists, permits at most one initial HPA-floor action, and permits one guarded escalation after persistent budget excess. Exact HPA restoration and the 300-second censoring rule were retained.
+
+| Result at 20 requests/s | C2 | C5 | C5-R2 |
+|---|---:|---:|---:|
+| Qualifying breaches | 2/5 | 5/5 | 2/5 |
+| No qualifying breach | 3/5 | 0/5 | 3/5 |
+| Recovered after breach | 2/2 | 5/5 | 1/2 |
+| Right-censored | 0 | 0 | 1 |
+| Mean SLO-violation duration (s) | 36.00 | 63.00 | 39.00 |
+| Mean replica-seconds | 1846.19 | 1971.52 | 1735.99 |
+| Mean peak CPU (%) | 151.4 | 160.8 | 135.2 |
+| Mean T7-T8 duration (s) | 23.37 | 39.67 | 19.97 |
+
+These directions are exploratory. Every block-paired 95% confidence interval included zero, and one C5-R2 breach was right-censored at 300 seconds. Therefore, the follow-up does **not** establish statistical superiority over C2 or C5.
+
 ## Final evidence
 
 - Primary dataset: `data/final-five-level/NET470-five-level-C1-C5-primary-dataset.csv`
-- Dataset SHA-256: `B7939B0FFE443AD76AC5ECE693CDFC03015C735895D27835E2DE2AF1A87781BD`
-- Accepted episodes: 125
-- Outcomes: 72 no qualifying breach, 32 recovered within 300 seconds, 21 right-censored at 300 seconds
-- Technical exclusions: four preserved failed attempts, separate from the selected dataset
-- Final analysis: `analysis/final-five-level-r02/`
-- Final runner: `controllers-and-runners/final-five-level-stress-runner-r01/`
+- Primary dataset SHA-256: `B7939B0FFE443AD76AC5ECE693CDFC03015C735895D27835E2DE2AF1A87781BD`
+- Primary accepted episodes: 125
+- Primary outcomes: 72 no qualifying breach, 32 recovered within 300 seconds, 21 right-censored at 300 seconds
+- Technical exclusions: four preserved failed attempts, separate from the selected primary dataset
+- Primary analysis: `analysis/final-five-level-r02/`
+- Primary runner: `controllers-and-runners/final-five-level-stress-runner-r01/`
+- C5-R2 analysis: `analysis/c5r2-exploratory-r01/`
+- C5-R2 selected dataset SHA-256: `A3D98519712E91AB5507E2AF1FF74E78282E97E2DC8E64BD115F8E67F09FA4C1`
+- C5-R2 verified analysis archive SHA-256: `BB9A12D7D6B5CE8C07A657D4D9B3DB27405F3E79F5C9017E0F61DB4BEB397581`
 - Manuscript source: `paper/final-r07/`
 
 ## Required research figures
@@ -39,19 +61,20 @@ The mechanism analysis explains this negative result: C5's bounded action mainly
 2. SLO-violation duration versus incoming requests: C1-C5 means with block-bootstrap 95% confidence intervals.
 3. Replica-seconds versus incoming requests: C1-C5 resource cost with block-bootstrap 95% confidence intervals.
 
-The plots use observed episode data without artificial smoothing. `NO_QUALIFYING_BREACH` is not encoded as zero-second recovery, and unrecovered breaches are retained as right-censored observations at 300 seconds.
+The plots use observed episode data without artificial smoothing. `NO_QUALIFYING_BREACH` is not encoded as zero-second recovery, and unrecovered breaches are retained as right-censored observations at 300 seconds. The C5-R2 comparison is retained as an exploratory table/analysis artifact rather than replacing the three primary figures.
 
 ## Repository structure
 
 - `application/` — microservice application, tests, and Kubernetes manifests
 - `controllers-and-runners/` — controller implementations and experiment runners
 - `data/final-five-level/` — frozen 125-row primary dataset and checksum
-- `analysis/final-five-level-r02/` — offline analysis code, tables, figures, freezes, and proof manifest
+- `analysis/final-five-level-r02/` — primary offline analysis code, tables, figures, freezes, and proof manifest
+- `analysis/c5r2-exploratory-r01/` — separate 15-episode C5-R2 follow-up summaries and exploratory figure
 - `paper/final-r07/` — final IEEE/Overleaf source, figures, traceability checklist, and compiled PDF
 - `analysis/final-stage10-results/` — earlier formal experiment retained for provenance
-- `analysis/part2-final-results/` — exploratory multistage follow-up retained for provenance
+- `analysis/part2-final-results/` — earlier exploratory multistage follow-up retained for provenance
 
-## Reproduce the final analysis
+## Reproduce the primary analysis
 
 The analysis is offline-only and performs no Kubernetes queries or live workload requests.
 
@@ -65,4 +88,4 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass `
   -ExpectedDatasetSHA256 B7939B0FFE443AD76AC5ECE693CDFC03015C735895D27835E2DE2AF1A87781BD
 ```
 
-The final experiment is frozen. Any future C5-R refinement must be identified as a separate follow-up experiment and must not overwrite or be merged into this dataset.
+The primary experiment is frozen. C5-R2 is a separate exploratory follow-up and must not overwrite or be merged into the 125-row primary dataset.
