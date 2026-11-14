@@ -55,7 +55,6 @@ These directions are exploratory. Every block-paired 95% confidence interval inc
 - C5-R2 analysis: `analysis/c5r2-exploratory-r01/`
 - C5-R2 selected dataset SHA-256: `A3D98519712E91AB5507E2AF1FF74E78282E97E2DC8E64BD115F8E67F09FA4C1`
 - C5-R2 verified analysis archive SHA-256: `BB9A12D7D6B5CE8C07A657D4D9B3DB27405F3E79F5C9017E0F61DB4BEB397581`
-- Manuscript source: `paper/final-r07/`
 
 ## Required research figures
 
@@ -74,8 +73,7 @@ The plots use observed episode data without artificial smoothing. `NO_QUALIFYING
 - `data/c5r2-exploratory-r01/` — separate frozen 15-row C2/C5/C5-R2 dataset, state, freeze, summaries, and manifest
 - `analysis/final-five-level-r02/` — primary offline analysis code, tables, figures, freezes, and proof manifest
 - `analysis/c5r2-exploratory-r01/` — separate 15-episode C5-R2 follow-up summaries and exploratory figure
-- `paper/final-r07/` — final IEEE/Overleaf source, figures, traceability checklist, and compiled PDF
-- `analysis/final-stage10-results/` — earlier formal experiment retained for provenance
+-- `analysis/final-stage10-results/` — earlier formal experiment retained for provenance
 - `analysis/part2-final-results/` — earlier exploratory multistage follow-up retained for provenance
 
 ## Reproduce the primary analysis
